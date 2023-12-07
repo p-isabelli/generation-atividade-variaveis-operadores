@@ -1,4 +1,4 @@
-package exercicios;
+package variaveisOperadores;
 
 import java.util.Scanner;
 
