@@ -65,19 +65,23 @@ public class exercicio04 {
 				devFull++;
 			}
 			
-			//A média de idade das pessoas que responderam à pesquisa
-			media = contIdade /totalParticipantes;
-			
 			System.out.println("Deseja continuar a leitura dos dados de um novo colaborador ou não (S/N)");
 			op = leia.next();
 		}
-	
+		
+		leia.close();
+		
 		System.out.println("Total de pessoas desenvolvedoras Backend: " + devBack);
 		System.out.println("Total de Mulheres Cis e Trans desenvolvedoras Frontend: " + devFront);
 		System.out.println("Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: " + devMobile);
 		System.out.println("Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: " + devFull);
 		System.out.println("O número total de pessoas que responderam à pesquisa: " + totalParticipantes);
-		System.out.println("A média de idade das pessoas que responderam à pesquisa: " + media);
-		leia.close();
+	
+		//A média de idade das pessoas que responderam à pesquisa
+		if(totalParticipantes != 0 && totalParticipantes > 1) {
+			media = contIdade /totalParticipantes;
+			System.out.println("A média de idade das pessoas que responderam à pesquisa: " + media);
+		} 
+				
 	}
 }

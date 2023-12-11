@@ -20,9 +20,8 @@ public class exercicio06 {
 		
 		if(cont != 0) {
 			media = soma / cont;
+			System.out.println("A média de todos os números múltiplos de 3 é: " + media);
 		}
-		
-		System.out.println("A média de todos os números múltiplos de 3 é: " + media);
 		
 		leia.close();
 	
