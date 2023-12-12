@@ -11,7 +11,7 @@ public class exercicio01 {
 		Scanner leia = new Scanner(System.in);
 		Queue<String> listaClientes = new LinkedList<>();
 		int op = 1;
-		String nome = "", clienteRemovido = "";
+		String clienteRemovido = "";
 		
 		while(op != 0) {
 			
@@ -22,8 +22,8 @@ public class exercicio01 {
 			switch(op){
 				case 1:
 					System.out.println("Digite o nome do cliente: ");
-					nome = leia.next();
-					listaClientes.add(nome);
+					listaClientes.add(leia.next());
+					System.out.println("Cliente adicionado!");
 					break;
 				case 2:
 					System.out.print("\tFila: ");
@@ -43,6 +43,7 @@ public class exercicio01 {
 					}
 					break;
 				case 0:
+					System.out.println("Programa Finalizado!");
 					break;
 				default:
 					System.out.println("Opção inválida");
