@@ -10,10 +10,10 @@ public class exercicio01 {
 		
 		Scanner leia = new Scanner(System.in);
 		Queue<String> listaClientes = new LinkedList<>();
-		int op = 1;
+		int op = 0;
 		String clienteRemovido = "";
 		
-		while(op != 0) {
+		do {
 			
 			System.out.println("\nSelecione uma opção: \n\n1 - Adicionar um novo Cliente na fila\n\n2 - Listar todos os Clientes na fila"
 					+ "\n\n3 - Chamar (retirar) uma pessoa da fila\n\n0 - Finalizar programa\n");
@@ -48,7 +48,7 @@ public class exercicio01 {
 				default:
 					System.out.println("Opção inválida");
 			}
-		} 
+		} while(op != 0);
 		leia.close();
 	}
 }
