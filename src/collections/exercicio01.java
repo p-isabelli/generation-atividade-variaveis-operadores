@@ -9,7 +9,7 @@ public class exercicio01 {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
-		List<String> listaDeCores = new ArrayList<String>();
+		List<String> listaDeCores = new ArrayList<>();
 		
 		System.out.println("Insira uma cor: ");
 		
