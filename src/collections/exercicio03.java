@@ -20,6 +20,7 @@ public class exercicio03 {
 		
 		Iterator<Integer> iListaInteiros = listaInteiros.iterator();
 		
+		System.out.println("Listar dados do Set: ");
 		while (iListaInteiros.hasNext()) {
 			System.out.println(iListaInteiros.next());
 		}

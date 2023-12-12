@@ -19,7 +19,7 @@ public class exercicio01 {
 		
 		Collections.sort(listaDeCores);
 		
-		System.out.println("Cores cadastradas: ");
+		System.out.println("Cores cadastradas e ordenadas: ");
 		
 		for(String cor : listaDeCores) {
 			System.out.println(cor);
